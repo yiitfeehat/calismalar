@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu Ödevi</title>
+    
+    <Style>
+        body{
+            background: linear-gradient(135deg, #ff7e00, #c90133);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+           display: grid;
+           grid-template-columns: repeat(3, 150px);
+           grid-gap: 20px;
+           padding: 20px;
+        }
+        .box{
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+           
+        }
+        
+        .none{ border:none; }
+        .solid{ border: 4px solid;}
+        .dotted{ border: 4px dotted;}
+        .dashed{ border: 4px dashed;}
+        .double{ border: 4px double;}
+        .groove{ border: 4px groove;}
+        .ridge{ border: 4px ridge;}
+        .inset{ border: 4px inset;}
+        .outset{ border: 4px outset;}
+    
+
+
+
+
+
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="box none">none</div>
+        <div class="box dotted">dotted</div>
+        <div class="box dashed">dashed</div>
+        <div class="box solid">solid</div>
+        <div class="box double">double</div>
+        <div class="box groove">groove</div>
+        <div class="box ridge">ridge</div>
+        <div class="box inset">inset</div>
+        <div class="box outset">outset</div>
+    </div>
+        
+</body>
+</html>
