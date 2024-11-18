@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">
+            FerZerKer.
+        </h1>
+
+        <div class="titles">
+            <div class="title title-1">
+                <h1>FARKINI</h1>
+            </div>
+            <div class="title title-2">
+                <h1>ORTAYA</h1>
+            </div>
+            <div class="title title-3">
+                <h1>KOY.</h1>
+            </div>
+        </div>
+        <ul class="blocks">
+            <li class="block-1 block"></li>
+            <li class="block-2 block"></li>
+            <li class="block-3 block"></li>
+            <li class="block-4 block"></li>
+            <li class="block-5 block"></li>
+            <li class="block-6 block"></li>
+        </ul>
+
+    </div>
+    <div class="video-background video1bg" id="video1-container">
+        <video id="video1" autoplay muted playsinline>
+            <source
+                src="./videos/stock-footage-dark-d-animation-with-devilish-characters-and-monsters-in-black-and-white-collection-of-motion.mp4"
+                type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+
+
+    <div class="video-background video-hidden" id="video2-container">
+        <video id="video2" autoplay loop muted playsinline>
+            <source src="./videos/storm.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+
+
+    <script>
+        TweenMax.staggerFrom(
+            ".titles > div",
+            0.8,
+            {
+                x: "-60",
+                ease: Power3.easeInOut,
+                opacity: "0",
+            },
+            2
+        );
+
+        TweenMax.staggerTo(
+            ".titles > div",
+            0.8,
+            {
+                x: "60",
+                ease: Power3.easeInOut,
+                delay: 1.2,
+                opacity: "0",
+            },
+            2
+        );
+        TweenMax.staggerFrom(
+            "li",
+            3,
+            {
+                x: "-1600",
+                delay: 4.2,
+                ease: Expo.easeInOut,
+            },
+            0.16
+        );
+
+        TweenMax.staggerTo(
+            "li",
+            2.6,
+            {
+                x: "1600",
+                delay: 6.8,
+                ease: Expo.easeInOut,
+            },
+            0.2
+        );
+
+        var textWrapper = document.querySelector(".header");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter'>$&</span>"
+        );
+
+        anime.timeline().add({
+            targets: ".header .letter",
+            opacity: [0, 1],
+            translateY: [80, 0],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: (el, i) => 8400 + 40 * i,
+        });
+
+
+        const video1 = document.getElementById('video1');
+        const video1Container = document.getElementById('video1-container');
+        const video2Container = document.getElementById('video2-container');
+
+
+        video1.addEventListener('ended', () => {
+
+            video1Container.classList.add('video-hidden');
+
+            video2Container.classList.remove('video-hidden');
+        });
+    </script>
+</body>
+
+</html>
