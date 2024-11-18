@@ -88,13 +88,19 @@
             <div class="text-9 text">FERZERKER</div>
             <div class="text-10 text">FERZERKER</div>
             <div class="text-11 text">FERZERKER</div>
+        </div>       
 
 
 
-
-            <audio autoplay loop style="display: none;">
+            <audio autoplay loop style="display: none;" id="myAudio">
                 <source src="./music/canozan.mp3" type="audio/mpeg">
             </audio>
+            <audio src=""></audio>
+            <script>
+                // Şarkıyı 30. saniyeden başlat
+                document.getElementById("myAudio").currentTime = 41;
+              </script>
+            
 
 
 </body>
