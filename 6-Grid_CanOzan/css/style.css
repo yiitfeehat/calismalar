@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Teko:wght@300..700&display=swap');
+
+/* FONTLAR 
+
+font-family: "Teko", sans-serif;
+font-family: "Alfa Slab One", serif;
+font-family: "Abril Fatface", serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: wheat;
+}
+
+body {
+    background-color: #0C0302;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, calc(100%/12));
+    grid-template-rows: repeat(12, calc(100%/12));
+    border: 5px dotted transparent;
+    border-image: linear-gradient(60deg, #EDAA25, #b02f04) 1;
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../img/can-ozan-konseri-31277.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.content {
+    /* box-sizing: content-box; */
+    /* border: 5px solid white; */
+    /* margin: 2px; */
+}
+
+.content1 {
+    background-color: #0a737345;
+    grid-area: 2/6/12/12;
+}
+
+.content2 {
+    background-color: #0a737330;
+    border: 1px solid #8e44ad;
+    border-radius: 6px;
+    box-shadow: 0 0 50px #8e44ad, 0 0 20px #8e44ad;
+    grid-area: 2/6/12/12;
+    z-index: 4;
+}
+
+.content3 {
+    /* background-color: #b7bf996f; */
+    /* border: 5px dotted transparent; */
+    /* border-image: linear-gradient(90deg, #C43302, #EDAA25) 1; */
+    grid-area: 4/2/5/7;
+    z-index: 5;
+
+}
+
+.content3 p {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.5rem;
+    /* margin-top: -2rem; */
+    margin-left: 0.45rem;
+    /* letter-spacing: 0.1rem; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    line-height: 0.8;
+    text-shadow: 10px 0.5px 0.1rem #ed6d56;
+
+}
+
+.content3 .p2 {
+    margin-left: 7.5rem;
+    margin-bottom: -4rem;
+    text-shadow: 10px 0.5px 0.1rem #ed6d56;
+
+
+}
+
+.content3 .p1 {
+    margin-top: -2rem;
+    margin-left: 5rem;
+
+
+}
+
+
+.content4 {
+    font-family: "Teko", sans-serif;
+    grid-area: 11/1/13/2;
+    writing-mode: vertical-lr;
+    /* color: ; */
+    font-size: 4.12vw;
+    /* margin-bottom: 1.75rem ; */
+    /* padding-left: 2rem;
+    padding-bottom: 2rem; */
+    background-color: #11d3d39d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.content4 .p3 {
+    margin: 1rem;
+    color: #0C0302;
+}
+
+.content5 {
+    grid-area: 8/3/11/11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33vw;
+    height: 25vh;
+
+
+}
+
+.content5 .p4 {
+    /* border: 2px solid red; */
+
+    font-size: 8rem;
+    white-space: nowrap;
+    z-index: 10;
+
+}
+
+.content6 {}
+
+.content7 {
+    grid-area: 3/3/6/8;
+    /* border: 6px solid #0C0302; */
+    background-color: #445bad75;
+    box-shadow: 0 0 10rem #2148d2cb;
+    border-radius: 28%;
+}
+
+.content8 {}
+
+.content9 {}
+
+.content10 {}
