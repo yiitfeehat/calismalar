@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-.body{
+.body {
     min-height: 100vh;
     min-width: none;
     align-items: center;
     display: flex;
 }
-.container{
+
+.container {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,23 +19,23 @@
     height: 100%;
     width: 100%;
     position: relative;
-    
+
 }
+
 .girl {
     border: 2px solid red;
     position: absolute;
 }
-.girl img{
+
+.girl img {
     position: right;
     border: 2px solid yellow;
 
 }
 
-.leafs{
+.leafs {}
 
-}
-
-.trees img{
+.trees img {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -44,25 +45,14 @@
 
 }
 
-.All-Login-Elements{
+.All-Login-Elements {}
 
-}
+.sign-in {}
 
-.sign-in{
-    
-}
-.sign-in h1{
+.sign-in h1 {}
 
-}
+.user_info {}
 
-.user_info{
+.inputs {}
 
-}
-
-.inputs{
-
-}
-
-.links{
-
-}
+.links {}
