@@ -33,5 +33,4 @@ SilBtn.addEventListener("click", () => {
         alert("Silinecek görev kalmadı.")
     }
 
-})  
- 
+})
