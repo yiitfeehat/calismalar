@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolyo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
 </head>
 
 <body class="overflow-x-hiddenhidden">
-
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-70%]"> <img src="./img/header-bg-color.png" alt="" class="w-full"></div>
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-70%]">
+        <img src="./img/header-bg-color.png" alt="" class="w-full" />
+    </div>
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
-        <img src="./img/logo.png" alt="logo" class="w-28 cursor-pointer">
+        <img src="./img/logo.png" alt="logo" class="w-28 cursor-pointer" />
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="#top">ana sayfa</a></li>
             <li><a href="#about">hakkımda</a></li>
@@ -21,38 +22,33 @@
             <li><a href="#projects">çalışmalarım</a></li>
             <li><a href="#contact">iletişim</a></li>
         </ul>
-        <div class="flex items-center gap-4"><button> <img src="./img/moon_icon.png" alt="" class="w-6"></button>
+        <div class="flex items-center gap-4">
+            <button><img src="./img/moon_icon.png" alt="" class="w-6" /></button>
             <a href="#contact"
-                class="hidden  lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">iletişim
-                <img src="./img/arrow-icon.png" class="w-3" alt="">
+                class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">iletişim
+                <img src="./img/arrow-icon.png" class="w-3" alt="" />
             </a>
 
-            <button class="block md:hidden ml-3" onclick="openMenu()"><img src="./img/menu-black.png" alt="" class="w-6"></button>
-
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./img/menu-black.png" alt="" class="w-6" />
+            </button>
         </div>
         <!-- ---------------------- KUCUK EKRANLAR ICIN MENU ----------------------- -->
-         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
-
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
             <div class="absolute right-6 top-6" onclick="closeMenu()">
-                <img src="./img/close-black.png" alt="" class="w-5 cursor-pointer">
+                <img src="./img/close-black.png" alt="" class="w-5 cursor-pointer" />
             </div>
             <li><a href="#top" onclick="closeMenu()">ana sayfa</a></li>
             <li><a href="#about" onclick="closeMenu()">hakkımda</a></li>
             <li><a href="#skills" onclick="closeMenu()">beceriler</a></li>
             <li><a href="#projects" onclick="closeMenu()">çalışmalarım</a></li>
             <li><a href="#contact" onclick="closeMenu()">iletişim</a></li>
-         </ul>
+        </ul>
     </nav>
 
-
-
-
-
-
-
-
     <!-- ------------------------------ SCRİPTLER ------------------------------ -->
-     <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
